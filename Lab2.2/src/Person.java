@@ -2,10 +2,10 @@
 public abstract class Person {
 	private String firstName;
 	private String familyName;
-	private int height;
+	private double height;
 	private String zodiacSign; 
 	
-	public Person(String firstName, String familyName, int height, String zodiacSign) {
+	public Person(String firstName, String familyName, double height, String zodiacSign) {
 		this.height = height;
 		this.firstName = firstName;
 		this.familyName = familyName;
@@ -20,7 +20,7 @@ public abstract class Person {
 		return familyName;
 	}
 	
-	public int height() {
+	public double height() {
 		return height;
 	}
 	

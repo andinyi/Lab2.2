@@ -1,5 +1,5 @@
 
-public class Student extends Person {
+class Student extends Person {
 	private double GPA;
 	private String Major;
 	private int satScore;
