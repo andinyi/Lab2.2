@@ -1,22 +1,34 @@
 
 public class Classroom {
-	private Person[] students;
-	private Person teacher;
+	private Student[] students;
+	private Teacher teacher;
 	
-	public Classroom(Person[] students, Person teacher, String Subject) {
+	public Classroom(Student[] students, Teacher teacher, String Subject) {
 		this.students = students;
 		this.teacher = teacher;
+		
 		
 	}
 	
 	public String getSubject() {
-		return 
+		return teacher.getSubject();
 	}
 	
-	public double classAverage() {
-		return 
+		private double total = 0;
 	
+		public double classAverage() {
+		for(Person p:this.students) {
+			if(p instanceof Student)  {
+				((Student) p).getGPA();
+				total = total + ((Student) p).getGPA();
+			}
+		}
+		return (total/students.length);
 		
+		
+	}
+		
+	public void printClass() {
 		
 	}
 }
