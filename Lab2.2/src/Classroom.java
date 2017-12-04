@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Classroom {
 	private Student[] students;
@@ -29,6 +30,6 @@ public class Classroom {
 	}
 		
 	public void printClass() {
-		
+		System.out.println("Teacher: " + teacher + ", Subject: " + teacher.getSubject() + ", Students: " + Arrays.toString(students));
 	}
 }

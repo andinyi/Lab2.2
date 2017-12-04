@@ -4,7 +4,7 @@ class Student extends Person {
 	private String Major;
 	private int satScore;
 	
-	public Student(String firstName, String familyName, int height, String zodiacSign, double GPA, String Major, int satScore) {
+	public Student(String firstName, String familyName, double height, String zodiacSign, double GPA, String Major, int satScore) {
 		super(firstName, familyName, height, zodiacSign);
 		this.GPA = GPA;
 		this.Major = Major; 
@@ -26,7 +26,7 @@ class Student extends Person {
 	}
 	
 		public String toString() {
-			return("Student First Name = " + super.getFamilyName() + " , Student Family Name = " + super.getFirstName());
+			return(super.getFamilyName() +  " " + super.getFirstName());
 		}
 		
 

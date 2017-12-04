@@ -17,6 +17,6 @@ class Teacher extends Person {
 	}
 	
 	public String toString() {
-		return("Teacher = " + Title + super.getFamilyName());
+		return(Title + super.getFamilyName());
 	}
 }
